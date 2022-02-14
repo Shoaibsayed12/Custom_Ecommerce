@@ -88,6 +88,9 @@
                   <th style="width: 30%">
                    Address
                   </th>
+                  <th style="width: 10%">
+                  Payment-method
+                  </th>
                 </tr>
               </thead>
 
@@ -151,6 +154,14 @@
                       <td>
                         <a>
                           <h2 class="text-info"><?php echo $row["address"]; ?></h2>
+                        </a>
+                        <br/>
+
+                      </td>
+
+                      <td>
+                        <a>
+                          <h2 class="text-info"><?php echo $row["payment_method"]; ?></h2>
                         </a>
                         <br/>
 

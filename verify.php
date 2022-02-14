@@ -46,19 +46,14 @@ $qry = mysqli_query($connect,"SELECT * from order_details WHERE id  ='$order_id'
 $data = mysqli_fetch_array($qry); 
 
 
-  $edit = mysqli_query($connect,"UPDATE order_details SET status ='processing' WHERE id  ='$order_id'");
+  $edit = mysqli_query($connect,"UPDATE order_details SET status ='processing', payment_method='razorpay' WHERE id  ='$order_id'");
 
 
 
 
     $html = "<p>Your payment was successful</p>
              <p>Payment ID: {$_POST['razorpay_payment_id']}</p>";
-             ?>
-             <form method="POST" action="index.php">
-        	<input type="submit" name="back" style="margin-top:5px;" class="btn" value="Back to homepage">
-
-				</form>
-                <?php
+             header("location:thankyou.php");
 }
 else
 {

@@ -72,3 +72,8 @@ if ($displayCurrency !== 'INR')
 $json = json_encode($data);
 
 require("checkout/{$checkout}.php");
+?>
+<form method="POST" action="codaction.php">
+<input type="submit" name="cod" style="margin-top:5px;" class="btn" value="cod">
+
+ </form>
