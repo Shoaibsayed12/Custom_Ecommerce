@@ -44,3 +44,5 @@ You can extract that to the razorpay-php directory as well.
 
 This release currently uses the 1.2.8 version of the SDK. Please ensure that you are
 using the latest as the test app might lag behind.
+
+# Add admin lte dist and plugin folder in Admin folder
