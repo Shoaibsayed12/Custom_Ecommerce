@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: black;
+    color: white;
+    height: 10vh;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.products{
+    display: flex;
+}
+.box{
+    border:1px solid #333;
+    background-color:#f1f1f1; 
+    border-radius:5px; 
+    padding:16px; 
+    text-align:center;
+}
+.btn{
+    background-color: aquamarine;
+}
