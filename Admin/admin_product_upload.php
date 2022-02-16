@@ -136,6 +136,18 @@
 
                                             </select>
                                         </div>
+                                         <div class="form-group row">
+                                            <label for="name" class="col-sm-2 col-form-label">Featured-Product</label>
+                                            <div class="col-sm-10">
+                                                <select name="featured" class="form-control select2"
+                                                    style="width: 100%;">
+
+                                                    <option select="selected">--select--</option>
+                                                    <option value="yes">yes</option>
+                                                    <option value="no">no</option>
+                                                </select>
+                                            </div>
+                                        </div>
 
 
 

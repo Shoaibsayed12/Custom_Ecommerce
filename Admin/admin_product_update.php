@@ -36,7 +36,8 @@ $data = mysqli_fetch_array($qry);
      ?>
 
         <?php
-    // include 'sidebar.php';
+        include 'navbar.php';
+     include 'sidebar.php';
 
     ?>
 
@@ -156,6 +157,19 @@ $data = mysqli_fetch_array($qry);
                                                     <option select="selected"><?php echo $data['status'] ?></option>
                                                     <option value="0">0</option>
                                                     <option value="1">1</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="name" class="col-sm-2 col-form-label">Featured-Product</label>
+                                            <div class="col-sm-10">
+                                                <select name="featured" class="form-control select2"
+                                                    style="width: 100%;">
+
+                                                    <option select="selected"><?php echo $data['featured_product'] ?></option>
+                                                    <option value="yes">yes</option>
+                                                    <option value="no">no</option>
                                                 </select>
                                             </div>
                                         </div>

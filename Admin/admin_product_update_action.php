@@ -9,6 +9,7 @@ if (isset($_POST['submit'])) {
     $quantity = $_POST['quantity'];
     $category = $_POST['category'];
     $status = $_POST['status'];
+    $featured = $_POST['featured'];
     echo "<br>".$P_name;
     
     
@@ -29,7 +30,7 @@ if (isset($_POST['submit'])) {
                         echo "the file" . htmlspecialchars(basename($_FILES["P_image"]["name"])) . "uploaded";
                         move_uploaded_file($_FILES['P_image']['tmp_name'],$target_file);
 
-                    $edit = mysqli_query($connect,"UPDATE tbl_product SET name='$P_name', image='$P_image',price='$P_price', quantity='$quantity',category_name='$category',status='$status'  WHERE id='$p_id'");
+                    $edit = mysqli_query($connect,"UPDATE tbl_product SET name='$P_name', image='$P_image',price='$P_price', quantity='$quantity',category_name='$category',status='$status',featured_product='$featured'  WHERE id='$p_id'");
                     mysqli_query($connect,$edit); 
                     header("location:admin_show_product.php");
                 }
@@ -44,7 +45,7 @@ if (isset($_POST['submit'])) {
         
         else{
             
-            $edit = mysqli_query($connect,"UPDATE tbl_product SET name='$P_name', image='$oldfile',price='$P_price', quantity='$quantity',category_name='$category',status='$status'  WHERE id='$p_id'");
+            $edit = mysqli_query($connect,"UPDATE tbl_product SET name='$P_name', image='$oldfile',price='$P_price', quantity='$quantity',category_name='$category',status='$status',featured_product='$featured'  WHERE id='$p_id'");
             // print_r('$edit');
     mysqli_query($connect,$edit); 
     header("location:admin_show_product.php"); // redirects to all records page

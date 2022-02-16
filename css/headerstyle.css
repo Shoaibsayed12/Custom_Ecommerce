@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0%;
+}
+.container-header{
+max-width: 1500px;
+margin: 0px auto;
+}
+header{
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    }
+.navbar-brand{
+font-family: zilla slab;
+font-weight: bold;
+
+}
+.nav-item{
+font-family: roboto ;
+font-size: 14px;
+padding: 0px 10px;
+}

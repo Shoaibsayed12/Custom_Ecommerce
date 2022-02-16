@@ -17,7 +17,7 @@
 <div class="wrapper">
   <!-- Navbar -->
   <?php include 'navbar.php';
-  // include 'sidebar.php'; 
+    
 
 include "db.php"; 
 
@@ -43,7 +43,7 @@ if(isset($_POST['update']))
 }
 
 
-
+include 'sidebar.php';
 
   ?>
  

@@ -9,6 +9,7 @@ $P_price = $_POST['P_price'];
 $quantity = $_POST['quantity'];
 $category = $_POST['category'];
 $status = $_POST['status'];
+$feature = $_POST['featured'];
 $P_image=$_FILES['P_image']['name'];
 
 $target_dir = "images/";
@@ -55,8 +56,8 @@ if($P_name ==''||$P_image == '' || $P_price=='' || $quantity=='' ||$category==''
     echo "Please fill all the value in all field";
 }
 elseif($P_name != ''&&$P_image != '' &&$quantity!='' &&$category!='' &&$status!=''){
-    $sql = "INSERT INTO tbl_product (name,image,price,quantity,category_name,status) 
-    VALUES ('$P_name','$P_image','$P_price','$quantity','$category','$status')";
+    $sql = "INSERT INTO tbl_product (name,image,price,quantity,category_name,status,featured_product) 
+    VALUES ('$P_name','$P_image','$P_price','$quantity','$category','$status','$feature')";
     mysqli_query($connect, $sql);
     echo "<script>alert('Record added');
     window.location.href = 'admin_show_product.php';</script>";
